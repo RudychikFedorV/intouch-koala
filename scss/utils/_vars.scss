@@ -1,0 +1,19 @@
+:root {
+  --html-fs: 1px;
+  --ff: "Work Sans", sans-serif;
+  --transition: 0.2s all ease-in-out;
+
+  --h1-400-48: normal 400 48px / 105% var(--ff);
+  --h2-400-37: normal 400 37px / 108% var(--ff);
+  --desc-400-16: normal 400 16px / 130% var(--ff);
+ 
+}
+$color-h1: #333;
+$color-nav: #022a1e;
+$text-white: #fff;
+$primary: #8842f0;
+$border: #eee;
+$black: #000;
+$color-btn: #d6fc52;
+$background-1: rgba(0, 0, 0, 0.3);
+$box-shadow: 0 208px 58px 0 rgba(0, 0, 0, 0.01);
