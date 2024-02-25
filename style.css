@@ -115,6 +115,7 @@ ul {
   --transition: 0.2s all ease-in-out;
   --h1-400-48: normal 400 48px / 105% var(--ff);
   --h2-400-37: normal 400 37px / 108% var(--ff);
+  --desc-400-24: normal 400 24px / 105% var(--ff);
   --desc-400-16: normal 400 16px / 130% var(--ff); }
 
 html {
@@ -282,5 +283,24 @@ body {
       max-width: 455px;
       color: #fff;
       margin-bottom: 32px; }
+
+.logos {
+  padding: 74px 0 68px 0; }
+  .logos__text {
+    font: var(--desc-400-24);
+    text-align: center;
+    color: #333;
+    margin-bottom: 24px; }
+  .logos__icons {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 60px; }
+    @media (max-width: 768px) {
+      .logos__icons {
+        gap: 30px; } }
+  @media (max-width: 576px) {
+    .logos {
+      gap: 20px; } }
 
 /*# sourceMappingURL=style.css.map */

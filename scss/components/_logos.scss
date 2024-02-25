@@ -1,0 +1,21 @@
+.logos {
+  padding: 74px 0 68px 0;
+
+  &__text {
+    font: var(--desc-400-24);
+    text-align: center;
+    color: $color-h1;
+    margin-bottom: 24px;
+  }
+  &__icons {
+    @include f-e-c;
+    gap: 60px;
+
+    @include tablet-small {
+      gap: 30px;
+    }
+  }
+  @include mobile {
+    gap: 20px;
+  }
+}
