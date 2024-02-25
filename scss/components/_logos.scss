@@ -14,8 +14,14 @@
     @include tablet-small {
       gap: 30px;
     }
-  }
-  @include mobile {
-    gap: 20px;
+    &-a {
+      transition: var(--transition);
+      &:hover {
+        scale: 1.1;
+      }
+    }
+    @include mobile {
+      gap: 20px;
+    }
   }
 }

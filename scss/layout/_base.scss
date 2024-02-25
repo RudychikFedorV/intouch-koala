@@ -46,6 +46,9 @@ body {
   @include mobile {
     font: var(--h2-400-37);
   }
+  @include mobile-small {
+    font: var(--h2-400-30);
+  }
 }
 .desc {
   color: $color-h1;

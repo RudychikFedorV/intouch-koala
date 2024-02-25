@@ -26,5 +26,11 @@
       color: $text-white;
       margin-bottom: 32px;
     }
+    &-img {
+      transition: var(--transition);
+      &:hover {
+        scale: 1.1;
+      }
+    }
   }
 }
