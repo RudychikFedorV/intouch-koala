@@ -1,0 +1,30 @@
+.generation {
+  @include f-s-c;
+  padding: 100px 60px 120px 60px;
+  border-radius: 12px;
+  background: $color-nav;
+  gap: 20px;
+
+  @include tablet-small {
+    flex-direction: column;
+    padding: 60px 30px;
+  }
+  @include mobile {
+    padding: 30px 15px;
+  }
+
+  &__info {
+    display: flex;
+    flex-direction: column;
+
+    &-title {
+      color: $text-white;
+      margin-bottom: 11px;
+    }
+    &-desc {
+      max-width: 455px;
+      color: $text-white;
+      margin-bottom: 32px;
+    }
+  }
+}

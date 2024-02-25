@@ -16,33 +16,39 @@
 
 <body>
     <div class="wrapper">
+        <div class="container">
+            <header class="header">
+                <nav class="header__nav">
+                    <ul class="header__ul" id="headerUl">
+                        <li class="header__li"><a href="/" class="header__a">Products</a></li>
+                        <li class="header__li"><a href="/" class="header__a">Use cases</a></li>
+                        <li class="header__li"><a href="/" class="header__a">Resources</a></li>
+                        <li class="header__li"><a href="/" class="header__a">About us</a></li>
 
-        <!-- header -->
-        <header class="header">
-            
-            <nav class="header__nav">
-                <ul class="header__ul" id="headerUl">
-                    <li class="header__li"><a href="/" class="header__a">Products</a></li>
-                    <li class="header__li"><a href="/" class="header__a">Use cases</a></li>
-                    <li class="header__li"><a href="/" class="header__a">Resources</a></li>
-                    <li class="header__li"><a href="/" class="header__a">About us</a></li>
+                        <li class="header__li"><a href="/" class="header__a">Log in</a></li>
+                        <li class="header__li"><a href="/" class="header__a btn">Request a demo</a></li>
+                        <span class="material-icons icon-close" onclick="navToggle()">close</span>
+                    </ul>
+                    <span class="header__backdrop" onclick="navToggle()"></span>
+                    <span class="material-icons icon-menu" onclick="navToggle()">menu</span>
+                </nav>
+            </header>
+            <section class="generation">
+                <div class="generation__info">
+                    <h1 class="h1-title generation__info-title">Next generation</h1>
+                    <h3 class="desc generation__info-desc">Welcome to the next generation of mobile commerce and
+                        customer engagement. Meet your mobile customers where they want to be met.
+                    </h3>
+                    <a href="/" class="generation__info-img">
+                        <img src="./img/mobile-commerce.png" alt="mobile-commerce"></a>
+                </div>
+                <div class="generation__img">
+                    <img src="./img/$50.png" alt="$50">
+                </div>
+            </section>
 
-                    <li class="header__li"><a href="/" class="header__a">Log in</a></li>
-                    <li class="header__li"><a href="/" class="header__a btn">Request a demo</a></li>
-                    <span class="material-icons icon-close" onclick="navToggle()">close</span>
-                </ul>
-                <span class="header__backdrop" onclick="navToggle()"></span>
-                <span class="material-icons icon-menu" onclick="navToggle()">menu</span>
-            </nav>
-        </header>
-        <!-- / header -->
-
-
-
-
+        </div>
     </div>
-
-
 
     <script src="./js/script.js"></script>
 </body>

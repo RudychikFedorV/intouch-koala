@@ -1,6 +1,6 @@
 .header {
   @include f-e-c;
-  padding: 22px 30px;
+  padding: 22px 0;
 
   &__backdrop {
     display: none;
@@ -61,14 +61,20 @@
 
     &.is-active,
     &:hover {
-      color: $color-h1;
+      color: $color-btn;
+      border: $border-btn;
+      padding: 13px 21px;
+      background: $black;
+      color: $text-white;
+      border-radius: 100px;
     }
   }
   .btn {
-    border-radius: 10px;
     background: $text-white;
-    padding: 2px 25px;
+    padding: 13px 21px;
     color: $color-nav;
+    border: $border-btn;
+    border-radius: 100px;
     transition: var(--transition);
     &:hover {
       background: $black;
@@ -84,5 +90,6 @@
 
   @include tablet {
     display: inline-block;
+    padding-right: 10px;
   }
 }

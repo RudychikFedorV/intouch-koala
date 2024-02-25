@@ -122,16 +122,20 @@ html {
 
 body {
   font-size: 16px;
-  font-family: var(--ff); }
+  font-family: var(--ff);
+  background: #1e1e1e; }
 
 .wrapper {
   max-width: 1200px;
   margin-inline: auto;
-  background: #8842f0; }
+  background: #ffffff; }
+
+.container {
+  max-width: 1128px;
+  margin-inline: auto; }
 
 .h1-title {
   color: #333;
-  text-align: center;
   font: var(--h1-400-48); }
   @media (max-width: 992px) {
     .h1-title {
@@ -180,7 +184,7 @@ body {
   display: flex;
   justify-content: flex-end;
   align-items: center;
-  padding: 22px 30px; }
+  padding: 22px 0; }
   .header__backdrop {
     display: none; }
     @media (max-width: 992px) {
@@ -226,12 +230,18 @@ body {
     color: #022a1e;
     transition: var(--transition); }
     .header__a.is-active, .header__a:hover {
-      color: #333; }
+      color: #d6fc52;
+      border: 1px solid #022a1e;
+      padding: 13px 21px;
+      background: #000;
+      color: #fff;
+      border-radius: 100px; }
   .header .btn {
-    border-radius: 10px;
     background: #fff;
-    padding: 2px 25px;
+    padding: 13px 21px;
     color: #022a1e;
+    border: 1px solid #022a1e;
+    border-radius: 100px;
     transition: var(--transition); }
     .header .btn:hover {
       background: #000;
@@ -244,6 +254,33 @@ body {
   @media (max-width: 992px) {
     .icon-menu,
     .icon-close {
-      display: inline-block; } }
+      display: inline-block;
+      padding-right: 10px; } }
+
+.generation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 100px 60px 120px 60px;
+  border-radius: 12px;
+  background: #022a1e;
+  gap: 20px; }
+  @media (max-width: 768px) {
+    .generation {
+      flex-direction: column;
+      padding: 60px 30px; } }
+  @media (max-width: 576px) {
+    .generation {
+      padding: 30px 15px; } }
+  .generation__info {
+    display: flex;
+    flex-direction: column; }
+    .generation__info-title {
+      color: #fff;
+      margin-bottom: 11px; }
+    .generation__info-desc {
+      max-width: 455px;
+      color: #fff;
+      margin-bottom: 32px; }
 
 /*# sourceMappingURL=style.css.map */
