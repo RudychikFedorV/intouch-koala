@@ -58,15 +58,16 @@
     font: var(--desc-400-16);
     color: $color-nav;
     transition: var(--transition);
+    border: 1px solid $text-white;
+    border-radius: 100px;
+    padding: 13px 21px;
 
     &.is-active,
     &:hover {
       color: $color-btn;
       border: $border-btn;
-      padding: 13px 21px;
       background: $black;
       color: $text-white;
-      border-radius: 100px;
     }
   }
   .btn {
@@ -91,6 +92,5 @@
   @include tablet {
     display: inline-block;
     padding-right: 10px;
-    
   }
 }

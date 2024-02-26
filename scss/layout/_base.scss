@@ -1,7 +1,6 @@
 html {
   font-size: var(--html-fs);
 }
-
 body {
   font-size: 16px;
   font-family: var(--ff);
@@ -61,4 +60,7 @@ body {
 
 .icon:hover {
   fill: $primary;
+}
+img {
+  cursor: pointer;
 }
