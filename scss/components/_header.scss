@@ -58,16 +58,16 @@
     font: var(--desc-400-16);
     color: $color-nav;
     transition: var(--transition);
-    border: 1px solid $text-white;
-    border-radius: 100px;
-    padding: 13px 21px;
 
     &.is-active,
     &:hover {
-      color: $color-btn;
-      border: $border-btn;
-      background: $black;
-      color: $text-white;
+      color: $color-h1;
+      box-shadow: $box-shadow1;
+      border-radius: 100px;
+      padding: 5px;
+    }
+    &:active {
+      color: $primary;
     }
   }
   .btn {

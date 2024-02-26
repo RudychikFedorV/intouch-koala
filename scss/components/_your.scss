@@ -1,0 +1,69 @@
+.your {
+    @include f-c-c;
+    gap: 20px;
+    padding: 0 20px 200px 20px;
+  
+    @include tablet {
+      padding: 0 20px 100px 20px;
+      flex-direction: column-reverse;
+      row-gap: 50px;
+    }
+    @include mobile-small {
+      padding: 0 10px 80px 10px;
+    }
+  
+    &-section {
+        max-width: 510px;
+      &__block {
+        display: flex;
+        align-items: center;
+        gap: 15px;
+        margin-bottom: 18px;
+        &-text {
+          font: var(--desc-400-14);
+          color: $color-nav;
+        }
+      }
+      &-title {
+        max-width: 600px;
+        margin-bottom: 33px;
+      }
+      &-desc {
+        max-width: 523px;
+        padding-bottom: 40px;
+        font: var(--desc-400-16);
+        color: $color-h1;
+        border-bottom: $border-btn;
+        margin-bottom: 30px;
+      }
+      &__svg {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        margin-bottom: 12px;
+        &-check {
+          cursor: pointer;
+        }
+        &-desc {
+          font: var(--desc-400-16);
+          color: $color-h1;
+        }
+      }
+      &__btn {
+        display: flex;
+        font: var(--desc-400-16);
+        color: $color-nav;
+      }
+      .btn {
+        display: inline-block;
+        padding: 13px 21px;
+        border: $border-btn;
+        border-radius: 100px;
+        transition: var(--transition);
+        &:hover {
+          color: $text-white;
+          background: $color-nav;
+        }
+      }
+    }
+  }
