@@ -1,0 +1,46 @@
+.work {
+  @include f-c-c-column;
+  text-align: center;
+
+  &__content {
+    max-width: 690px;
+    margin-bottom: 64px;
+    @include mobile {
+      margin-bottom: 40px;
+    }
+
+    &-title {
+      margin-bottom: 32px;
+    }
+    .text {
+      margin-bottom: 18px;
+    }
+    p {
+      font: var(--desc-400-16);
+      color: $color-h1;
+    }
+  }
+  &__section {
+    margin-bottom: 120px;
+    @include mobile {
+      margin-bottom: 60px;
+    }
+    &-content {
+      @include f-c-c;
+      flex-wrap: wrap;
+      gap: 32px;
+
+      @include mobile {
+        gap: 20px;
+      }
+
+      &__img {
+        padding: 8px 29px;
+        border: $border-work;
+        border-radius: 8px;
+        width: 190px;
+        height: 100px;
+      }
+    }
+  }
+}

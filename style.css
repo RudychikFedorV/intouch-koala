@@ -632,4 +632,44 @@ img {
         color: #fff;
         background: #022a1e; }
 
+.work {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center; }
+  .work__content {
+    max-width: 690px;
+    margin-bottom: 64px; }
+    @media (max-width: 576px) {
+      .work__content {
+        margin-bottom: 40px; } }
+    .work__content-title {
+      margin-bottom: 32px; }
+    .work__content .text {
+      margin-bottom: 18px; }
+    .work__content p {
+      font: var(--desc-400-16);
+      color: #333; }
+  .work__section {
+    margin-bottom: 120px; }
+    @media (max-width: 576px) {
+      .work__section {
+        margin-bottom: 60px; } }
+    .work__section-content {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 32px; }
+      @media (max-width: 576px) {
+        .work__section-content {
+          gap: 20px; } }
+      .work__section-content__img {
+        padding: 8px 29px;
+        border: 1px solid rgba(0, 0, 0, 0.1);
+        border-radius: 8px;
+        width: 190px;
+        height: 100px; }
+
 /*# sourceMappingURL=style.css.map */

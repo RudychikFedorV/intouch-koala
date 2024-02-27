@@ -45,6 +45,12 @@ $mobile-small: 480px;
   justify-content: center;
   align-items: center;
 }
+@mixin f-c-c-column {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
 @mixin f-e-c {
   display: flex;
   justify-content: flex-end;
