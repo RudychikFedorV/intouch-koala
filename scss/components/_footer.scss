@@ -1,0 +1,39 @@
+.footer {
+  @include f-s-c;
+  border-top: $border-work;
+  padding: 18px;
+
+  @include tablet-small {
+    flex-direction: column-reverse;
+    gap: 20px;
+  }
+  &__intouch {
+    font: var(--desc-400-14);
+    color: $color-h1;
+  }
+  &__section {
+    display: flex;
+    gap: 20px;
+    @include tablet-small {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      justify-items: center;
+      grid-column-gap: 50px;
+    }
+    @include mobile-small {
+      display: grid;
+      grid-template-columns: 1fr;
+    }
+
+    &-text {
+      font: var(--desc-400-14);
+      color: $color-nav;
+      transition: var(--transition);
+      flex-wrap: wrap;
+      &:hover {
+        color: $primary;
+        font: var(--desc-400-16);
+      }
+    }
+  }
+}

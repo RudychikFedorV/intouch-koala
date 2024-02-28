@@ -42,8 +42,12 @@
     }
 
     &-img {
+      transition: var(--transition);
       @include tablet-small {
         display: none;
+      }
+      &:hover {
+        scale: 1.3;
       }
     }
 
@@ -98,6 +102,12 @@
       font: var(--desc-400-13);
       color: $color-h1;
       margin-bottom: 10px;
+    }
+    &-img {
+      transition: var(--transition);
+      &:hover {
+        scale: 1.3;
+      }
     }
   }
 }
